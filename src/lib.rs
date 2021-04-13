@@ -7,7 +7,7 @@ use djanco::csv::*;
 use djanco::objects::*;
 use djanco_ext::*;
 
-#[djanco(May, 2021, subsets(All))]
+#[djanco(April, 2021, subsets(Generic))]
 pub fn my_query(database: &Database, _log: &Log, output: &Path) -> Result<(), std::io::Error>  {
     database.projects()        
         .filter_by(AtLeast(Count(FromEachIf(project::Paths, Equal(path::Language, Language::Java))), 1))
