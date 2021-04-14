@@ -9,5 +9,7 @@ license = "MIT"
 
 [dependencies]
 clap = "3.0.0-beta.2"
+chrono = "0.4.19"
+regex = "1.4.5"
 djanco = { git = "https://github.com/PRL-PRG/djanco", branch = "main" }
 djanco_ext = { git = "https://github.com/PRL-PRG/djanco_ext" }
